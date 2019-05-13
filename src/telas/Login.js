@@ -1,15 +1,15 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text } from 'react-native';
+import { Button } from 'react-native-paper';
 
 class Login extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Login</Text>
-        <Button
-          title="OK"
-          onPress={() => this.props.navigation.navigate('ExemploA')}
-        />
+        <Button mode="text" onPress={() => this.props.navigation.navigate('ExemploA')}>
+          OK
+        </Button>
       </View>
     );
   }
